@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@component_rooms/*": ["./src/app/components/rooms/*"]
     }
   },
   "include": [
