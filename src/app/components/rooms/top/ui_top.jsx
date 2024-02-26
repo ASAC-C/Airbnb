@@ -7,6 +7,7 @@ import {
 
 export default async function Top({ travelID = 0 }) {
   const iconSize = { width: 16, height: 16 };
+  const roominfo = await fetch(`/api/room/${travelID}`)
 
   return (
     <React.Fragment>
