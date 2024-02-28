@@ -27,11 +27,11 @@ export default function Header() {
 
         {/* 헤더 중앙 */}
         <div className="flex flex-1 justify-center items-center text-xl">
-          <button className="font-bold mx-4">숙소</button>
+          <button className="font-bold px-4">숙소</button>
           <button className="text-gray-500 hover:bg-gray-100 rounded-full px-4 py-4">
             체험
           </button>
-          <button className="text-gray-500 hover:bg-gray-100 rounded-full px-2 py-4">
+          <button className="text-gray-500 hover:bg-gray-100 rounded-full px-4 py-4">
             온라인 체험
           </button>
         </div>
