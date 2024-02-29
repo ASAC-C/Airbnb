@@ -3,7 +3,7 @@ import Close from '/public/home/close.svg'
 
 export default function LangModal({ setIsModalOpen }) {
   // 모달 닫기
-  const modalClose = (e) => {
+  const modalClose = () => {
     setIsModalOpen(false)
   }
 

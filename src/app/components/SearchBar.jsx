@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Search from '/public/home/search.svg'
-
+import LocationModal from '@/app/components/LocationModal'
 export default function SearchBar() {
+  const [anchorEl, setAnchorEl] = useState(null)
+
+  const handleProfileMenuOpen = (e) => {
+    setAnchorEl(e.currentTarget)
+  }
   return (
     <div className="w-[1100px] h-[88px] relative flex border border-b border-gray-300 rounded-full shadow-lg">
-      <button className="w-1/3 flex flex-col justify-center hover:bg-gray-100 rounded-full">
+      <button
+        className="w-1/3 flex flex-col justify-center hover:bg-gray-100 rounded-full"
+        aria-controls="profile-menu"
+        aria-haspopup="true"
+        onClick={handleProfileMenuOpen}
+      >
         <div className="text-black font-bold ml-8">여행지</div>
         <div className="text-gray-500 items-center ml-8 text-lg">
           여행지 검색
@@ -29,6 +39,7 @@ export default function SearchBar() {
           <Search width="24" height="24" />
         </button>
       </div>
+      <LocationModal anchorEl={anchorEl} setAnchorEl={setAnchorEl} />
     </div>
   )
 }
