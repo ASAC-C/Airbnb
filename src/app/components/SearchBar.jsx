@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Search from '/public/home/search.svg'
 import LocationModal from '@/app/components/LocationModal'
+
 export default function SearchBar() {
   const [anchorEl, setAnchorEl] = useState(null)
 

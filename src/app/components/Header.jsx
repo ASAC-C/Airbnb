@@ -42,8 +42,7 @@ export default function Header() {
             당신의 공간을 에어비엔비 하세요
           </button>
           <button
-            className="hover:bg-gray-100 rounded-full mb-1 px-4 py-1
-          "
+            className="hover:bg-gray-100 rounded-full mb-1 px-4 py-1"
             onClick={() => setIsModalOpen(true)}
           >
             <Globe width="24" height="24" />
