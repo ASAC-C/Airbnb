@@ -1,7 +1,7 @@
 "use client";
 
 import LoginModal from "@/app/components/loginmodal";
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 
 export default function LoginBtn() {
   const [showModal, setshowModal] = useState(false);
