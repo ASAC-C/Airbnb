@@ -1,41 +1,60 @@
-import React from "react";
-import {
-  SHARE_ICON,
-  HEART_ICON,
-  GetDeafultSettingIcon,
-} from "@/app/components/rooms/_common/commonSVG";
+"use client";
 
-export default async function Top({ travelID = 0 }) {
-  const iconSize = { width: 16, height: 16 };
+import React from "react";
+import SVG_Share from "/public/share.svg";
+import SVG_WishList from "/public/wishList.svg";
+
+export default function Top({ title }) {
+  /**
+   * '공유하기' 버튼 이벤트 처리
+   * @param {e} : 이벤트 객체 (React - SyntheticEvent)
+   */
+  const onClickEventShare = (e) => {
+    console.log("onClickEventShare");
+  };
+
+  /**
+   * '저장' 버튼 이벤트 처리
+   * @param {e} : 이벤트 처리 객체
+   */
+  const onClickEventWishList = (e) => {
+    console.log("onClickEventWishList");
+  };
 
   return (
     <React.Fragment>
-      <div className="w-full h-[54px] px-20 pt-6 flex justify-between items-center">
-        <h1 className="text-[26px] font-semibold text-[#222222]">
-          {/* todo. 여행지 이름, 데이터로 받아와야 한다.  */}
-          감성힐링 체험이 있는 글램핑 숙소의 감성카바나 travelID({travelID})
-        </h1>
-        <div className="w-[152px] h-[34px] flex justify-between">
-          {/* 공유하기 버튼 */}
-          <button
-            className="w-auto inline-block items-start 
-              text-[14px] font-semibold leading-[18px] text-[#222222]"
-          >
-            <div className="w-[80px] h-[18px] flex justify-between items-center">
-              <GetDeafultSettingIcon iconPath={SHARE_ICON} size={iconSize} />
-              공유하기
+      <div className="w-full h-auto inline-block">
+        <div className="h-[54px] max-w-7xl px-20 pt-6 m-auto flex justify-between items-end">
+          <h1 className="text-[26px] text-[#222222] font-semibold">{title}</h1>
+          <div className="flex justify-end items-end">
+            {/* 공유하기 */}
+            <div className="mr-5">
+              <button
+                className="p-2 mx-[-8px] flex items-center hover:bg-customBGHover rounded-lg"
+                onClick={onClickEventShare}
+              >
+                <span className="mr-2">
+                  <SVG_Share className="w-4 h-4" />
+                </span>
+                <div className="text-[14px] font-semibold">공유하기</div>
+              </button>
             </div>
-          </button>
-          {/* 저장 버튼 */}
-          <button
-            className="w-auto inline-block items-start 
-              text-[14px] font-semibold leading-[18px] text-[#222222]"
-          >
-            <div className="w-[52px] h-[18px] flex justify-between items-center">
-              <GetDeafultSettingIcon iconPath={HEART_ICON} size={iconSize} />
-              저장
+
+            {/* 저장 */}
+            <div>
+              <button
+                className="p-2 mx-[-8px] hover:bg-customBGHover rounded-lg"
+                onClick={onClickEventWishList}
+              >
+                <div className="flex items-center text-[14px] font-semibold">
+                  <span className="mr-2">
+                    <SVG_WishList className="w-4 h-4" />
+                  </span>
+                  <div className="text-[14px] font-semibold">저장</div>
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </React.Fragment>
