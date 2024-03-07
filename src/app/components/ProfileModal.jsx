@@ -2,6 +2,7 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 
 export default function ProfileModal({ anchorEl, setAnchorEl }) {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const isOpen = Boolean(anchorEl)
   const onClose = () => {
     setAnchorEl(null)
@@ -32,5 +33,6 @@ export default function ProfileModal({ anchorEl, setAnchorEl }) {
         도움말 센터
       </MenuItem>
     </Menu>
+    // {isModalOpen && <LoginModal setIsModalOpen={setIsModalOpen} />}
   )
 }
