@@ -19,7 +19,9 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
+      "@data/*": ["./src/app/lib/*"],
+      "@/public/*": ["./public/*"],
+      "@component_rooms/*": ["./src/app/components/rooms/*"]
     }
   },
   "include": [
