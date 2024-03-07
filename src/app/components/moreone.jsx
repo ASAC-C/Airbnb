@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState, useEffect } from "react";
 import X from "/public/XMark.svg";
 import Up from "/public/up.svg";

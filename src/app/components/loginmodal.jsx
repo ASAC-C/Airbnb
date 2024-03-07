@@ -7,6 +7,7 @@ import SignupModal from "@/app/components/signupmodal";
 export default function LoginModal({ openModal, onClose }) {
   const [signupModal, setsignupModal] = useState(false);
   const [email, setEmail] = useState("");
+
   if (!openModal) return null;
 
   const handleClose = (e) => {
@@ -19,6 +20,7 @@ export default function LoginModal({ openModal, onClose }) {
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
+    localStorage.setItem("Email", e.target.value);
   };
 
   return (
@@ -46,7 +48,7 @@ export default function LoginModal({ openModal, onClose }) {
           <h3 className="pb-2 text-xl font-semibold text-left">
             에어비앤비에 오신 것을 환영합니다.
           </h3>
-          <form>
+          <div>
             <div className="rounded-lg border border-gray-400 py-3 mt-4 focus-within:ring focus-within:ring-black">
               <input
                 type="text"
@@ -65,7 +67,7 @@ export default function LoginModal({ openModal, onClose }) {
             >
               계속
             </button>
-          </form>
+          </div>
 
           <div className="inline-flex items-center justify-center w-full">
             <hr className="w-full h-px my-8 bg-gray-300 border-0" />
@@ -73,12 +75,6 @@ export default function LoginModal({ openModal, onClose }) {
               또는
             </span>
           </div>
-          <button
-            className="text-center font-semibold w-full border border-black rounded-md text-sm bg-white text-black h-12"
-            type="button"
-          >
-            카카오로 로그인하기
-          </button>
           {signupModal && <SignupModal onClose={() => setsignupModal(false)} />}
         </div>
       </div>

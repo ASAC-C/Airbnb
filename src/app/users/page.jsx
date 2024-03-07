@@ -2,6 +2,8 @@
 
 import LoginModal from "@/app/components/loginmodal";
 import React, { Fragment, useState } from "react";
+import KakaoLogout from "@/app/components/kakao/kakaologout";
+import KakaoLogin from "../components/kakao/kakaologin";
 
 export default function LoginBtn() {
   const [showModal, setshowModal] = useState(false);
@@ -14,6 +16,10 @@ export default function LoginBtn() {
         Login Modal
       </button>
       <LoginModal openModal={showModal} onClose={() => setshowModal(false)} />
+      <div>
+        <KakaoLogin />
+        <KakaoLogout />
+      </div>
     </Fragment>
   );
 }

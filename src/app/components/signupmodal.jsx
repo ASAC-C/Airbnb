@@ -13,6 +13,7 @@ export default function SignUpModal({ onClose, email }) {
   const handleOpenMore = () => {
     setopenMore(true);
   };
+
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-25 flex flex-col justify-center items-center animate-fadeIn"
@@ -75,7 +76,7 @@ export default function SignUpModal({ onClose, email }) {
               placeholder="이메일"
               autoComplete="off"
               className="py-1 px-3 block w-full bg-transparent text-sm placeholder:text-gray-500 focus:outline-none focus:ring-0"
-              value={email}
+              defaultValue={localStorage.getItem("Email")}
             />
           </div>
           <p className="text-left text-zinc-500 text-xs my-1 py-1 tracking-tight">
@@ -140,7 +141,11 @@ export default function SignUpModal({ onClose, email }) {
               </span>
             </label>
           </div>
-          <button className="block mt-3 mb-8 text-xs underline decoration-[1.5px] font-bold  hover:bg-gray-100">
+          <button
+            className="block mt-3 mb-8 text-xs underline decoration-[1.5px] font-bold  hover:bg-gray-100"
+            type="button"
+            onClick={handleOpenMore}
+          >
             더 보기
           </button>
           <hr />
