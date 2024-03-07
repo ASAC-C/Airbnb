@@ -1,13 +1,14 @@
+// React
 import React from "react";
+
+// Component
 import Header from "@component_rooms/header/ui_header";
 import Top from "@component_rooms/top/ui_top";
 import PreViewPhoto from "@component_rooms/photo/ui_previewPhoto";
 import TravelInfo from "@component_rooms/info/ui_travelInfo";
 import Reservation from "@component_rooms/reservation/ui_reservation";
 
-export default async function Page({ id = 1 }) {
-  console.log(`[DEV] RoomsPage id : ${id}`);
-
+export default async function Page({ id = 2 }) {
   /*
    * DataFetch
    * > 세부 데이터는 roomsData.json 파일로 처리
@@ -30,15 +31,16 @@ export default async function Page({ id = 1 }) {
       <Top title={parsedData.title} />
       <PreViewPhoto arrImage={parsedData.images} />
 
-      {/* <div className="w-full">
-        <div
-          className="w-[1280px] h-[100px] mx-[90px] px-20 
-            flex flex-wrap justify-start items-stretch"
-        >
-          <TravelInfo />
-          <Reservation />
+      <div className="w-full max-w-7xl h-auto px-20 m-auto">
+        <div className="flex flex-wrap justify-start">
+          <div className="w-3/5 h-auto bg-pink-100">
+            <TravelInfo lodgingInfo={parsedData.lodgingInfo} />
+          </div>
+          <div className="w-2/5 h-auto bg-gray-100">
+            <Reservation />
+          </div>
         </div>
-      </div> */}
+      </div>
     </React.Fragment>
   );
 }

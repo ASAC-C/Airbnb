@@ -2,29 +2,103 @@
   "dataList": [
     {
       "id": 1,
-      "title": "홍천의 자연 속 편하게 휴식할 숙소의 글램핑203동(2단지)",
+      "title": "Mohammed Mutlak Camp",
       "images": [
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/1e607778-88cf-4768-96e8-dc528b6a28f5.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/98be09a2-9209-40d0-a022-5ed4fa2c99fa.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/f7c45539-c8a3-466e-ae69-f6410029c955.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/9475a435-f98e-475b-8f4c-7dcbc2356051.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/581b2f07-0bfa-4626-847a-314e5e2d3255.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/48d962a6-4c06-43a7-9ecc-edcea6454b70.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/8f1ee716-bf20-477a-961e-b84db9779d39.jpeg?im_w=720"
-      ]
+        "https://a0.muscache.com/im/pictures/d31ff0cf-e8b4-4f03-8ca4-3d91d93263bb.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/3c9624c0-348b-4ff6-896b-465292f21fcf.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/99845345-73e7-415a-9a6b-b017b5b65f61.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/7dd6f5ed-56ae-4ad8-9701-f2d619499d88.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/bb937ec1-db61-476b-a97f-1601a0f6c596.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/a1de81b9-4601-46c3-9643-d68f63d2d5e8.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/34baad6f-1ee8-4861-8806-09af2ef26622.jpg?im_w=720"
+      ],
+      "lodgingInfo": {
+        "location": "",
+        "description": "",
+        "reviewCount": 0,
+        "hostIntroduction": "",
+        "overview": {
+          "list": [
+            {
+              "svgName": "",
+              "svgClassName": "",
+              "description": ""
+            },
+            {
+              "svgName": "",
+              "svgClassName": "",
+              "description": "."
+            },
+            {
+              "svgName": "",
+              "svgClassName": "",
+              "description": ""
+            }
+          ]
+        }
+      }
     },
     {
       "id": 2,
-      "title": "-",
+      "title": "홍천의 자연 속 편하게 휴식할 숙소의 글램핑203동(2단지)",
       "images": [
         "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/1e607778-88cf-4768-96e8-dc528b6a28f5.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/98be09a2-9209-40d0-a022-5ed4fa2c99fa.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/9475a435-f98e-475b-8f4c-7dcbc2356051.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/f7c45539-c8a3-466e-ae69-f6410029c955.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/45bc8fd4-8929-4efe-9b96-68c39a7e49f4.jpeg?im_w=720",
         "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/581b2f07-0bfa-4626-847a-314e5e2d3255.jpeg?im_w=720",
         "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/48d962a6-4c06-43a7-9ecc-edcea6454b70.jpeg?im_w=720",
-        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/8f1ee716-bf20-477a-961e-b84db9779d39.jpeg?im_w=720"
-      ]
+        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/2c600acb-e0f7-4a15-927e-a3ce062dfd7a.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/cae87d5d-6078-49dc-adb8-7447314c1317.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/prohost-api/Hosting-841707871546139828/original/7dd60ae2-dc44-4105-9a83-78c128e14b7e.jpeg?im_w=720"
+      ],
+      "lodgingInfo": {
+        "location": "Seo-myeon, Hongcheon, 한국의 텐트",
+        "description": "최대 인원 · 2명침대 1개 · 욕실 1개",
+        "reviewCount": 2,
+        "hostName": "호스트: Onda 님",
+        "hostExperience": "슈퍼호스트 · 호스팅 경력 5년",
+        "overview": {
+          "list": [
+            {
+              "svgName": "CheckIn",
+              "svgClassName": "w-6 h-6",
+              "title": "셀프 체크인",
+              "description": "건물 직원의 도움을 받아 체크인하실 수 있습니다."
+            },
+            {
+              "svgName": "Medal",
+              "svgClassName": "w-6 h-6",
+              "title": "Onda님은 슈퍼호스트입니다",
+              "description": "슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하는 호스트입니다."
+            },
+
+            {
+              "svgName": "Parking",
+              "svgClassName": "w-6 h-6",
+              "title": "무료 주차 혜택을 누리세요",
+              "description": "해당 지역에서 무료 주차가 가능한 몇 안 되는 숙소 중 하나입니다."
+            }
+          ]
+        },
+        "accommodationOverview": "숙소 설명<br> 안녕하세요. 저희는 다양한 휴식 공간을 연구하고 제공하는 Onda입니다. 이 곳에서 머무를 모든 분들께서 편안하고 행복한 시간을 보내기를 바랍니다.<br> <br> [숙소 소개]<br> 푸른 자연이 기다리는 이곳에 오신 것을 환영합니다.<br> <br> 2019년 11월 신축 오픈하여 모던하고 깔끔한 인테리어가 멋스러운 글램핑으로<br> 다양한 콘셉트와 콘텐츠로 연인과의 더블데이트, 가족모임, 워크숍, 파티룸 등으로 활용가능하십니다.<br> <br> 아이들 정서 교감에 좋은 넓은 놀이터와 숲 체험학습, RC카 및 드론 조종도 가능한 공간이 있어 숙박뿐 아니라 아이들이 안전하게 놀 수 있는 공간 또한 콘셉트 별로 기획하여 특색있게 조성하고 있습니다.<br> <br> 일상의 지친 피로를 풀고, 다양하고 특별한 부대시설로 모든 연령층이 만족할 수 있고 잊지 못할 추억을 선물하도록 노력하겠습니다.<br> <br> [객실유형]<br> 원룸형(더블1)+개별화장실+개별샤워실<br> *침구는 예약하신 인원에 맞게 제공됩니다.<br> <br><b>숙소</b><br> [전객실 개별테라스바베큐]<br> 이용종류 : 숯불 바베큐<br> 준비시간 : 입실 후 이용하실 시간 말씀하시기<br> 숯불피우는시간 : 오후 5시 ~ 오후 8시까지<br> 이용시간 : 입실 후 ~ 밤 9시까지 (아예 점화를 꺼야함)<br> 이용가격 : 객실당 2만원 (숯추가 1만원)<br> * 추가옵션 : 그릴드 + 버너 대여시 2만원 (솥뚜껑) / 전기그릴 대여시 1만원<br> ※ 숯/그릴 개인지참불가<br> (** 화기류 전체 다 개인지참 불가능)<br> ※ 우천 및 동계시 불가능<br> (* 빌라동만 불가능)<br> ※ 기본양념 개인지참 필수<br> <br> [팔각정 / 폭포 ]<br> 팔각정에서 야외 바비큐 가능<br> 히팅 난로 설치로 인해 겨울철에도 사용가능<br> * 예약제로 운영<br> <br> [캠프파이어]<br> 1. 불멍 (1객실 이용시)<br> - 전객실 불멍가능<br> - 장작 구매시 개인화로 제공 / 이용가능<br> - 요금 : 1망 2만원<br> <br> 2. 불멍 (2객실이상 함께 이용시)<br> - 지정된 장소에서 가능<br> - 위치 : 총 2곳<br> (* 1단지에 1개 위치, 4단지에 1개 위치)<br> * 예약제로 운영되오니, 자세한 내용은 펜션에 문의주세요!<br> <br> [토리아이 라운지]<br> - 카페<br> 이용시간 : 08:30~21:00<br> * 간단한 스낵과 커피, 키즈음료, 간식 판매<br> <br> [키즈존 (외부에위치)]<br> 트램펄린, 키즈카트렉, 전동카, 킥보드, 자전거 구비<br> 잔디가 있어서 축구가능<br> 모래놀이터<br> (* 모래놀이터 위에서 RC카 조종가능)<br> <br> [운동시설]<br> 위치 : 세미나동 내<br> 구성 : 운동기구, 키즈축구장, 족구장 구비<br> <br> [매점]<br> 펜션 내 매점운영<br> 판매품목 : 토리아이라운지에 음료, 아기과자, 라면, 햇반 판매<br> <br> [글램핑장 매너타임 공지]<br> * 글램핑장은 밤 10시이후는 매너타임입니다.<br> * 블루투스 마이크 사용불가<br> * 블루투스 스피커 노래 트는거 불가<br> * 고성방가 금지<br> <br> [주차 및 Wifi]<br> 주차 및 Wifi 가능합니다.<br> <br> 부대시설은 날씨 및 현장 상황에 따라서 이용 가능여부가 달라질 수 있습니다. 부대시설 이용 불가는 환불 사유에 해당이 되지 않으니 예약 전 꼭 이용 가능여부를 사전 확인해주세요!<br><br><b>기타 주의사항</b><br> 주의사항을 읽지 않아 발생하는 모든 문제는 호스트가 책임질 수 없으니 예약 전 반드시 숙지해 주세요.<br> <br> 추가인원 요금 및 유아 입실 인원 포함 안내<br> - 2세 미만 유아는 현장에 도착해서 추가 결제를 해야 입실 가능합니다.<br> - 2세 미만 유아를 포함한 입실 인원이 객실의 최대인원을 초과할 경우 이용 및 환불이 불가합니다.<br> <br> 숙소와의 연락<br> - '호스트에게 연락하기'를 통해선 연락이 어렵습니다. 호스트와의 연락은 아래 방법을 확인해주세요.<br> 1. Airbnb 메시지 기능을 통해 메시지로 문의해주세요. (Onda 답변 가능 시간: 매주 평일 10:00~18:00)<br> 2. 예약 확정 고객은 문자 메시지를 확인해주세요. 예약 확정 즉시 숙소 연락처가 문자로 발송됩니다.<br> 3. 만약 예약 확정 후 문자를 받지 못하셨다면 Airbnb 메시지 기능을 통해 알려주세요.<br> 4. 예약시 한국 내에서 수신받을 수 있는 연락처를 필히 기재해주세요.<br> 5. 연락처를 기재하지 않아 발생하는 불이익은 호스트가 책임질 수 없습니다.<br> <br> 숙소 및 부대시설 이용 수칙<br> - 오후 7시 이후 체크인 예정이라면 예약 완료시 발송되는 숙소 연락처로 전화해서 알려주세요.<br> - 숙박 외 부대시설은 날씨나 현장 여건에 따라 이용이 어려울 수 있습니다.<br> - 예약 전 부대시설 이용 가능 여부를 에어비앤비 메시지 기능을 통해 확인해 주세요.<br> - 부대시설은 숙소에서 부가적으로 제공하는 시설입니다. 따라서 부대시설 이용는 환불 사유에 해당되지 않습니다.",
+        "accommodation": [
+          {
+            "space": "공용공간",
+            "bedding": "더블 침대 1개"
+          }
+        ],
+        "amenitiesList": [
+          "Waterside,수변에 인접",
+          "Kitchen,주방",
+          "Wifi,무선 인터넷",
+          "FreeParking,건물 내 무료 주차",
+          "TV,TV",
+          "AirConditioner,에어컨",
+          "HairDryer,헤어드라이어",
+          "Refrigerator,냉장고",
+          "SecurityCamera,숙소 내 보안 카메라",
+          "CarbonMonoxideAlarm,일산화탄소 경보기"
+        ]
+      }
     }
   ]
 }

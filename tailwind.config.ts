@@ -32,11 +32,15 @@ const config: Config = {
           to: { transform: "translateY(100%)", opacity: "0" },
         },
       },
+      /**
+       * PhotoModal 활성화에 사용되는 애니메이션
+       * > slideUpToFadeIn, slideDownToFadeOut
+       */
       animation: {
         slideUp: "slideUp 0.4s ease-out",
         fadeIn: "fadeIn 0.4s ease-in-out",
-        slideUpToFadeIn: "slideUpToFadeIn 5.0s ease-out",
-        slideDownToFadeOut: "slideDownToFadeOut 5.0s ease-in-out",
+        slideUpToFadeIn: "slideUpToFadeIn 0.4s ease-out",
+        slideDownToFadeOut: "slideDownToFadeOut 0.3s ease-in-out",
       },
       colors: {
         customBGGray: "#dddddd",
@@ -45,6 +49,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    //require("@tailwindcss/line-clamp") // tailwind css v3.3 기본 제공
+  ],
 };
 export default config;
