@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       keyframes: {
         slideUp: {
           "0%": { transform: "translateY(100%)" },
@@ -22,13 +23,34 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        slideUpToFadeIn: {
+          from: { transform: "translateY(100%)", opacity: "0" },
+          to: { transform: "translateY(0)", opacity: "1" },
+        },
+        slideDownToFadeOut: {
+          from: { transform: "translateY(0)", opacity: "1" },
+          to: { transform: "translateY(100%)", opacity: "0" },
+        },
       },
+      /**
+       * PhotoModal 활성화에 사용되는 애니메이션
+       * > slideUpToFadeIn, slideDownToFadeOut
+       */
       animation: {
         slideUp: "slideUp 0.4s ease-out",
         fadeIn: "fadeIn 0.4s ease-in-out",
+        slideUpToFadeIn: "slideUpToFadeIn 0.4s ease-out",
+        slideDownToFadeOut: "slideDownToFadeOut 0.3s ease-in-out",
+      },
+      colors: {
+        customBGGray: "#dddddd",
+        customBGHover: "#f7f7f7",
+        customTextGray: "#717171",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    //require("@tailwindcss/line-clamp") // tailwind css v3.3 기본 제공
+  ],
 };
 export default config;
