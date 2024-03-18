@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -33,31 +33,48 @@ export default function Carousel() {
 
     // 나머지 아이템들도 동일한 형태로 추가
   ]
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-  }
-  return (
-    <Slider {...settings} className="w-full h-80">
-      {/* menus 배열을 반복하여 각 이미지와 제목을 렌더링 */}
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-      {menus.map((item, index) => (
-        <div key={index} className="flex">
-          <div className="flex flex-col">
-            {/* Next.js의 Image 컴포넌트 사용 */}
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => Math.min(prevIndex + 5, menus.length - 1))
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 5, 0))
+  }
+
+  return (
+    <div className="w-full h-[90px] py-8 px-16">
+      <div className="flex items-center justify-between">
+        {menus.slice(currentIndex, currentIndex + 11).map((menu, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-between items-center flex-grow"
+          >
             <Image
-              src={`/menubar/${item.imgpath}`}
-              alt={item.menuname}
-              width={100}
-              height={100}
+              src={`/menubar/${menu.imgpath}`}
+              alt={menu.menuname}
+              width={24}
+              height={24}
             />
-            <span className="mt-1">{item.menuname}</span>
+            <p className="text-sm text-gray-600 mt-2">{menu.menuname}</p>
           </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </div>
+      <button
+        className="prev"
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+      >
+        &#10094;
+      </button>
+      <button
+        className="next"
+        onClick={nextSlide}
+        disabled={currentIndex + 11 >= menus.length}
+      >
+        &#10095;
+      </button>
+    </div>
   )
 }
