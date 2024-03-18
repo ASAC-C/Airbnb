@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import ArrowLeftIcon from '/public/arrow.svg'
 import ArrowRightIcon from '/public/arrow.svg'
-
+import Image from 'next/image'
 const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -19,11 +19,12 @@ const ImageCarousel = ({ images }) => {
   }
 
   return (
-    <div className="relative">
-      <img
+    <div className="w-full h-[315px] relative">
+      <Image
         src={images[currentIndex]}
         alt={`Image ${currentIndex + 1}`}
-        className="w-full h-[315px] rounded-lg"
+        className="rounded-lg"
+        fill
       />
       <button
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent border-none outline-none"
