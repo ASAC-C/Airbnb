@@ -25,7 +25,8 @@ export default function LocationModal({ anchorEl, setAnchorEl }) {
       sx={{
         '.MuiPaper-root': {
           borderRadius: '20px',
-          width: '600px',
+          width: '550px',
+          marginTop: '20px',
         },
       }}
     >
@@ -36,73 +37,86 @@ export default function LocationModal({ anchorEl, setAnchorEl }) {
       </Typography>
       <Grid container spacing={4} sx={{ padding: '20px' }}>
         <Grid item xs={4}>
-          <Image
-            src={world}
-            alt="Europe"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={world}
+              alt="Europe"
+              width="100%"
+              height="100%"
+              layout="responsive"
+              borderRadius="30px"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             유연한 검색
           </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Image
-            src={Europe}
-            alt="World"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={Europe}
+              alt="World"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             유럽
           </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Image
-            src={japan}
-            alt="World"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={japan}
+              alt="World"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             일본
           </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Image
-            src={SoutheastAsia}
-            alt="World"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={SoutheastAsia}
+              alt="World"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             동남아시아
           </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Image
-            src={Thailand}
-            alt="World"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={Thailand}
+              alt="World"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             태국
           </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Image
-            src={Australia}
-            alt="World"
-            width="100%"
-            height="100%"
-            layout="responsive"
-          />
+          <div className="hover:border-2 hover:border-gray-500">
+            <Image
+              src={Australia}
+              alt="World"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
+          </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
             호주
           </Typography>
