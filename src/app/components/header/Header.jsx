@@ -6,9 +6,9 @@ import logo from '/public/common/logo.png'
 import Globe from '/public/home/globe.svg'
 import HamburgerMenu from '/public/home/hamburgermenu.svg'
 import User from '/public/home/userprofile.svg'
-import SearchBar from '@/app/components/SearchBar'
-import LangModal from '@/app/components/LangModal'
-import ProfileModal from '@/app/components/ProfileModal'
+import SearchBar from '@/app/components/header/SearchBar'
+import LangModal from '@/app/components/header/LangModal'
+import ProfileModal from '@/app/components/header/ProfileModal'
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -19,14 +19,14 @@ export default function Header() {
   }
   return (
     <>
-      <div className="mx-24 my-4 flex items-center">
+      <div className="mx-16 my-4 flex items-center">
         {/* 로고 */}
         <Link href="/" className="flex flex-1 justify-start flex-grow">
-          <Image src={logo} alt="logo" width="136" height="48" />
+          <Image src={logo} alt="logo" width="100" height="40" />
         </Link>
 
         {/* 헤더 중앙 */}
-        <div className="flex flex-1 justify-center items-center text-xl">
+        <div className="flex flex-1 justify-center items-center text-md">
           <button className="font-bold px-4">숙소</button>
           <button className="text-gray-500 hover:bg-gray-100 rounded-full px-4 py-4">
             체험
@@ -38,28 +38,28 @@ export default function Header() {
 
         {/* 헤더 프로필 부분 */}
         <div className="flex flex-1 justify-end flex-grow">
-          <button className="text-xl font-bold hover:bg-gray-100 rounded-full px-4">
+          <button className="text-md font-bold hover:bg-gray-100 rounded-full px-4">
             당신의 공간을 에어비엔비 하세요
           </button>
           <button
             className="hover:bg-gray-100 rounded-full mb-1 px-4 py-1"
             onClick={() => setIsModalOpen(true)}
           >
-            <Globe width="24" height="24" />
+            <Globe width="18" height="18" />
           </button>
           <button
             aria-controls="profile-menu"
             aria-haspopup="true"
             onClick={handleProfileMenuOpen}
-            className="mx-4 border border-gray-300 rounded-full w-32 h-16 hover:shadow-lg"
+            className="mx-2 border border-gray-300 rounded-full w-20 h-12 hover:shadow-lg"
           >
             <div className="flex">
               <HamburgerMenu
-                width="40"
-                height="32"
-                className="justify-start mx-4"
+                width="48"
+                height="48"
+                className="justify-start mx-2 space-between mt-0 mb-4"
               />
-              <User width="44" height="32" className="justify-end mx-4" />
+              <User width="72" height="48" className="justify-end mx-2 mb-1" />
             </div>
           </button>
         </div>
