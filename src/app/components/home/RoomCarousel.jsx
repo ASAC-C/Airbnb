@@ -1,9 +1,9 @@
 // ImageCarousel.js
 import React, { useState } from 'react'
-import ArrowLeftIcon from '/public/arrow.svg'
-import ArrowRightIcon from '/public/arrow.svg'
+import ArrowLeft from '/public/carousel/arrowLeft.svg'
+import ArrowRight from '/public/carousel/arrowRight.svg'
 import Image from 'next/image'
-const ImageCarousel = ({ images }) => {
+export default function RoomCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const goToPreviousSlide = () => {
@@ -30,16 +30,18 @@ const ImageCarousel = ({ images }) => {
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent border-none outline-none"
         onClick={goToPreviousSlide}
       >
-        <ArrowLeftIcon className="w-8 h-8 text-gray-500 hover:text-gray-800" />
+        <div className="w-auto h-auto p-1 bg-white rounded-full text-gray-700 border border-gray-400 items-center">
+          <ArrowLeft width="24" height="24" />
+        </div>
       </button>
       <button
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent border-none outline-none"
         onClick={goToNextSlide}
       >
-        <ArrowRightIcon className="w-8 h-8 text-gray-500 hover:text-gray-800" />
+        <div className="w-auto h-auto p-1 bg-white rounded-full text-gray-700 border border-gray-400 items-center">
+          <ArrowRight width="24" height="24" />
+        </div>
       </button>
     </div>
   )
 }
-
-export default ImageCarousel

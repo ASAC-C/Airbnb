@@ -27,7 +27,7 @@ const RoomsList = () => {
   }
 
   return (
-    <div className="flex flex-wrap p-[60px]">
+    <div className="flex flex-wrap px-16 py-8">
       {data.map((room, index) => (
         <div
           key={index}
