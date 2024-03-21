@@ -73,7 +73,7 @@ export default function SearchBar() {
       />
       {showCalendar && (
         <div className="absolute top-16 right-0 z-20">
-          <CalendarModal onSelect={handleCalendarClose} />
+          <CalendarModal />
         </div>
       )}
     </div>
