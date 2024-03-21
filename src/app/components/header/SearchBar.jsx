@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Search from '/public/home/search.svg'
 import LocationModal from '@/app/components/header/LocationModal'
 import TravelerModal from '@/app/components/header/TravelerModal'
-import Calendar from '@/app/components/header/Calendar'
+import CalendarModal from '@/app/components/header/CalendarModal'
 
 export default function SearchBar() {
   const [locationAnchorEl, setLocationAnchorEl] = useState(null)
@@ -15,7 +15,7 @@ export default function SearchBar() {
     setTravelerAnchorEl(e.currentTarget)
   }
   const handleCheckInOutClick = () => {
-    setShowCalendar(true)
+    setShowCalendar(!showCalendar)
   }
 
   const handleCalendarClose = () => {
@@ -72,8 +72,8 @@ export default function SearchBar() {
         setAnchorEl={setTravelerAnchorEl}
       />
       {showCalendar && (
-        <div className="absolute top-16 right-0 z-10">
-          <Calendar onSelect={handleCalendarClose} />
+        <div className="absolute top-16 right-0 z-20">
+          <CalendarModal onSelect={handleCalendarClose} />
         </div>
       )}
     </div>

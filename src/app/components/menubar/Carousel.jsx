@@ -45,6 +45,14 @@ export default function Carousel() {
 
   return (
     <div className="w-full h-[90px] py-8 px-16">
+      {' '}
+      <button
+        className="prev flex justify-start"
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+      >
+        &#10094;
+      </button>
       <div className="flex items-center justify-between">
         {menus.slice(currentIndex, currentIndex + 11).map((menu, index) => (
           <div
@@ -62,14 +70,7 @@ export default function Carousel() {
         ))}
       </div>
       <button
-        className="prev"
-        onClick={prevSlide}
-        disabled={currentIndex === 0}
-      >
-        &#10094;
-      </button>
-      <button
-        className="next"
+        className="next flex justify-end"
         onClick={nextSlide}
         disabled={currentIndex + 11 >= menus.length}
       >
