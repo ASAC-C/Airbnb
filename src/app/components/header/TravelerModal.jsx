@@ -2,7 +2,8 @@
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import React, { useState } from 'react'
-import PetModal from '@/app/components/PetModal'
+import PetModal from '@/app/components/header/PetModal'
+
 // count 상태 Custom Hook
 function useCount(initialCount) {
   const [count, setCount] = useState(initialCount)

@@ -44,12 +44,19 @@ export default function Carousel() {
   }
 
   return (
-    <div className="w-full h-[90px] py-8 px-16">
-      <div className="flex items-center justify-between">
+    <div className="w-full h-[90px] py-8 px-16 flex justify-between items-center">
+      <button
+        className="prev"
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+      >
+        <ArrowLeft width="24" height="24" />
+      </button>
+      <div className="w-auto flex justify-between items-center space-x-12">
         {menus.slice(currentIndex, currentIndex + 11).map((menu, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between items-center flex-grow"
+            className="flex flex-col justify-between items-center"
           >
             <Image
               src={`/menubar/${menu.imgpath}`}
@@ -62,18 +69,11 @@ export default function Carousel() {
         ))}
       </div>
       <button
-        className="prev"
-        onClick={prevSlide}
-        disabled={currentIndex === 0}
-      >
-        &#10094;
-      </button>
-      <button
         className="next"
         onClick={nextSlide}
         disabled={currentIndex + 11 >= menus.length}
       >
-        &#10095;
+        <ArrowRight width="24" height="24" />
       </button>
     </div>
   )
