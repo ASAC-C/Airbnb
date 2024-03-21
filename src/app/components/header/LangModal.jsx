@@ -16,11 +16,11 @@ export default function LangModal({ setIsModalOpen }) {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center animate-fadeIn"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center animate-fadeI z-40"
       onClick={modalClose}
     >
       <div
-        className="bg-white w-[866px] h-[729px] p-5 rounded-2xl animate-slideUp relative overflow-y-auto"
+        className="bg-white w-[866px] h-[729px] p-5 rounded-2xl animate-slideUp relative overflow-y-auto z-50"
         onClick={modalContent}
       >
         <button
