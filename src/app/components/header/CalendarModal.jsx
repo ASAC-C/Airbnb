@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Calendar from '@/app/components/header/Calendar'
 
-export default function CalendarModal({ onClose }) {
+export default function CalendarModal() {
   const [range, setRange] = useState(null) // range 상태 변수 추가
 
   return (

@@ -18,9 +18,6 @@ export default function SearchBar() {
     setShowCalendar(!showCalendar)
   }
 
-  const handleCalendarClose = () => {
-    setShowCalendar(false)
-  }
   return (
     <div className="w-[900px] h-[72px] relative flex border border-b border-gray-300 rounded-full shadow-lg">
       {/* 검색바 */}
@@ -73,7 +70,7 @@ export default function SearchBar() {
       />
       {showCalendar && (
         <div className="absolute top-16 right-0 z-20">
-          <CalendarModal onSelect={handleCalendarClose} />
+          <CalendarModal />
         </div>
       )}
     </div>

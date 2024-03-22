@@ -1,10 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import Slider from 'react-slick'
-import Link from 'next/link'
 import Image from 'next/image'
-import ArrowLeft from '/public/menubar/menu_leftarrow.svg'
-import ArrowRight from '/public/menubar/menu_arrow.svg'
+import ArrowLeft from '/public/carousel/arrowLeft.svg'
+import ArrowRight from '/public/carousel/arrowRight.svg'
 
 export default function Carousel() {
   const menus = [
@@ -30,8 +28,6 @@ export default function Carousel() {
     { imgpath: 'menu_icon20.jpg', menuname: '농장' },
     { imgpath: 'menu_icon21.jpg', menuname: '스키 타고 출입' },
     { imgpath: 'menu_icon22.jpg', menuname: '와인 농장' },
-
-    // 나머지 아이템들도 동일한 형태로 추가
   ]
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -44,13 +40,15 @@ export default function Carousel() {
   }
 
   return (
-    <div className="w-full h-[90px] py-8 px-16 flex justify-between items-center">
+    <div className="w-full h-[90px] pt-8 pb-0 px-16 flex justify-between items-center">
       <button
         className="prev"
         onClick={prevSlide}
         disabled={currentIndex === 0}
       >
-        <ArrowLeft width="24" height="24" />
+        <div className="w-auto h-auto p-1 bg-white rounded-full text-gray-700 border border-gray-400 items-center">
+          <ArrowLeft width="24" height="24" />
+        </div>
       </button>
       <div className="w-auto flex justify-between items-center space-x-12">
         {menus.slice(currentIndex, currentIndex + 11).map((menu, index) => (
@@ -73,7 +71,9 @@ export default function Carousel() {
         onClick={nextSlide}
         disabled={currentIndex + 11 >= menus.length}
       >
-        <ArrowRight width="24" height="24" />
+        <div className="w-auto h-auto p-1 bg-white rounded-full text-gray-700 border border-gray-400 items-center">
+          <ArrowRight width="24" height="24" />
+        </div>
       </button>
     </div>
   )
