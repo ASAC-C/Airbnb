@@ -23,7 +23,9 @@ const RoomsList = () => {
   }, [])
 
   if (!data) {
-    return <div>Loading...</div>
+    return (
+      <div className="text-xl mt-2 text-center">숙소 이미지 불러오는 중...</div>
+    )
   }
 
   return (
