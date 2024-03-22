@@ -23,14 +23,16 @@ const RoomsList = () => {
   }, [])
 
   if (!data) {
-    return <div>Loading...</div>
+    return (
+      <div className="text-xl mt-2 text-center">숙소 이미지 불러오는 중...</div>
+    )
   }
 
   return (
     <div className="flex flex-wrap px-16 py-8">
-      {data.map((room, index) => (
+      {data.map((room) => (
         <div
-          key={index}
+          key={room.id}
           className="w-1/4 h-full p-[12px] mb-1 flex flex-col items-start"
         >
           <div className="w-full h-1/8 relative mb-2">

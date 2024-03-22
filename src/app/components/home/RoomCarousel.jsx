@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ArrowLeft from '/public/carousel/arrowLeft.svg'
 import ArrowRight from '/public/carousel/arrowRight.svg'
 import Image from 'next/image'
+
 export default function RoomCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
