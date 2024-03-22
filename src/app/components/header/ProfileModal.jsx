@@ -34,6 +34,7 @@ export default function ProfileModal({ anchorEl, setAnchorEl }) {
         >
           <button onClick={handleLoginClick}>로그인</button>
         </MenuItem>
+
         <MenuItem sx={{ fontSize: '14px', padding: '16px' }}>회원가입</MenuItem>
         <hr />
         <MenuItem sx={{ fontSize: '14px', padding: '16px' }}>
