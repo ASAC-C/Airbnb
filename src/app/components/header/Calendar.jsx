@@ -1,9 +1,9 @@
-'use client'
 import React, { useState } from 'react'
 import { addDays, format } from 'date-fns'
 import { DateRange, DayPicker } from 'react-day-picker'
 import { ko } from 'date-fns/locale'
 import 'react-day-picker/dist/style.css'
+
 const pastMonth = new Date()
 const css = `
 .selected {
@@ -24,11 +24,14 @@ const css = `
 `
 
 export default function Calendar() {
-  const defaultSelected = {
-    from: pastMonth,
-    to: addDays(pastMonth, 4),
+  const [selectedRange, setSelectedRange] = useState({
+    from: undefined,
+    to: undefined,
+  })
+
+  const handleSelect = (newRange) => {
+    setSelectedRange(newRange)
   }
-  const [range, setRange] = useState(defaultSelected)
 
   return (
     <div className="Calendar">
@@ -37,11 +40,11 @@ export default function Calendar() {
         id="test"
         mode="range"
         defaultMonth={pastMonth}
-        selected={range}
+        selected={selectedRange}
         numberOfMonths={2}
         locale={ko}
         pagedNavigation
-        onSelect={setRange}
+        onSelect={handleSelect}
         modifiersClassNames={{
           selected: 'selected',
           range_end: 'end-date',
@@ -49,10 +52,7 @@ export default function Calendar() {
           range_start: 'start-date',
         }}
         modifiers={{
-          selected: {
-            from: range?.from,
-            to: range?.to,
-          },
+          selected: selectedRange,
         }}
       />
     </div>
