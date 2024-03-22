@@ -18,9 +18,6 @@ export default function SearchBar() {
     setShowCalendar(!showCalendar)
   }
 
-  const handleCalendarClose = () => {
-    setShowCalendar(false)
-  }
   return (
     <div className="w-[900px] h-[72px] relative flex border border-b border-gray-300 rounded-full shadow-lg">
       {/* 검색바 */}

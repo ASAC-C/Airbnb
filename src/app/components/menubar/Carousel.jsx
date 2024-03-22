@@ -40,7 +40,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className="w-full h-[90px] py-8 px-16 flex justify-between items-center">
+    <div className="w-full h-[90px] pt-8 pb-0 px-16 flex justify-between items-center">
       <button
         className="prev"
         onClick={prevSlide}
