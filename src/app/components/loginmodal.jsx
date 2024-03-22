@@ -1,32 +1,32 @@
-"use client";
+'use client'
 
-import React, { useState } from "react";
-import X from "/public/XMark.svg";
-import SignupModal from "@/app/components/signupmodal";
+import React, { useState } from 'react'
+import X from '/public/XMark.svg'
+import SignupModal from '@/app/components/signupmodal'
 
 export default function LoginModal({ openModal, onClose }) {
-  const [signupModal, setsignupModal] = useState(false);
-  const [email, setEmail] = useState("");
+  const [signupModal, setsignupModal] = useState(false)
+  const [email, setEmail] = useState('')
 
-  if (!openModal) return null;
+  if (!openModal) return null
 
   const handleClose = (e) => {
-    if (e.target.id === "wrapper") onClose();
-  };
+    if (e.target.id === 'wrapper') onClose()
+  }
 
   const handleSignupModal = () => {
-    setsignupModal(true);
-  };
+    setsignupModal(true)
+  }
 
   const handleEmail = (e) => {
-    setEmail(e.target.value);
-    localStorage.setItem("Email", e.target.value);
-  };
+    setEmail(e.target.value)
+    localStorage.setItem('Email', e.target.value)
+  }
 
   return (
     // 모달띄우기
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 overflow-y-auto flex justify-center items-center"
+      className="fixed inset-0 bg-black bg-opacity-25 overflow-y-auto flex justify-center items-center z-50"
       id="wrapper"
       onClick={handleClose}
     >
@@ -79,5 +79,5 @@ export default function LoginModal({ openModal, onClose }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
