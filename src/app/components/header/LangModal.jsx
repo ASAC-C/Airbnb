@@ -16,11 +16,11 @@ export default function LangModal({ setIsModalOpen }) {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center animate-fadeIn"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center animate-fadeIn z-40"
       onClick={modalClose}
     >
       <div
-        className="bg-white w-[866px] h-[729px] p-5 rounded-2xl animate-slideUp relative overflow-y-auto"
+        className="bg-white w-[700px] h-[609px] p-5 rounded-2xl animate-slideUp relative overflow-y-auto z-50"
         onClick={modalContent}
       >
         <button
@@ -58,7 +58,7 @@ export default function LangModal({ setIsModalOpen }) {
                 </p>
               </div>
               <div className="mt-4">
-                <p className="text-3xl font-bold p-4 pb-2">추천 언어 및 지역</p>
+                <p className="text-2xl font-bold p-4 pb-2">추천 언어 및 지역</p>
                 <div className="flex mt-2 mx-4 text-lg">
                   <button className="p-4 text-left mr-4 hover:bg-gray-100 rounded-lg">
                     <p>English</p>
@@ -71,7 +71,7 @@ export default function LangModal({ setIsModalOpen }) {
                 </div>
               </div>
               <div className="mt-4">
-                <p className="text-3xl font-bold p-4 pb-2">
+                <p className="text-2xl font-bold p-4 pb-2">
                   언어와 지역을 선택하세요.
                 </p>
                 <div className="flex mt-2 mx-4 text-lg">
@@ -88,7 +88,7 @@ export default function LangModal({ setIsModalOpen }) {
             </>
           ) : (
             <div className="mt-4">
-              <p className="text-3xl font-bold p-4 pb-2">통화를 선택하세요.</p>
+              <p className="text-2xl font-bold p-4 pb-2">통화를 선택하세요.</p>
               <div className="flex mt-2 mx-4 text-lg">
                 <button className="p-4 text-left mr-16 hover:bg-gray-100 rounded-lg">
                   <p>한국 원</p>

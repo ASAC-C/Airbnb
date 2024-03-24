@@ -1,32 +1,36 @@
-"use client";
+'use client'
 
-import React, { useState } from "react";
-import X from "/public/XMark.svg";
-import SignupModal from "@/app/components/signupmodal";
+import React, { useState } from 'react'
+import X from '/public/XMark.svg'
+import SignupModal from '@/app/components/signupmodal'
 
 export default function LoginModal({ openModal, onClose }) {
-  const [signupModal, setsignupModal] = useState(false);
-  const [email, setEmail] = useState("");
-
-  if (!openModal) return null;
+  const [signupModal, setsignupModal] = useState(false)
+  const [email, setEmail] = useState('')
+  const [isValidEmail, setIsValidEmail] = useState(true)
+  if (!openModal) return null
 
   const handleClose = (e) => {
-    if (e.target.id === "wrapper") onClose();
-  };
+    if (e.target.id === 'wrapper') onClose()
+  }
 
   const handleSignupModal = () => {
-    setsignupModal(true);
-  };
+    setsignupModal(true)
+  }
 
   const handleEmail = (e) => {
-    setEmail(e.target.value);
-    localStorage.setItem("Email", e.target.value);
-  };
-
+    setEmail(e.target.value)
+    localStorage.setItem('Email', e.target.value)
+    setIsValidEmail(validateEmail(e.target.value))
+  }
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/
+    return emailRegex.test(email)
+  }
   return (
     // 모달띄우기
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 overflow-y-auto flex justify-center items-center"
+      className="fixed inset-0 bg-black bg-opacity-25 overflow-y-auto flex justify-center items-center z-50"
       id="wrapper"
       onClick={handleClose}
     >
@@ -58,26 +62,42 @@ export default function LoginModal({ openModal, onClose }) {
                 className="py-1 px-3 block w-full bg-transparent text-sm placeholder:text-gray-500 focus:outline-none focus:ring-0"
                 onChange={handleEmail}
                 value={email}
-              />
+              />{' '}
             </div>
+            {!isValidEmail &&
+              email !== '' && ( // 이메일이 빈 문자열이 아니고 isValidEmail이 false일 때에만 아래의 문구가 표시됩니다.
+                <p className="text-red-500 text-xs mt-1">
+                  이메일 형식이 올바르지 않습니다.
+                </p>
+              )}
+
             <button
-              className="font-semibold mt-4 w-full transition items-center justify-center rounded-md text-sm bg-rose-500 text-white h-12"
+              className={`font-semibold mt-4 w-full transition items-center justify-center rounded-md text-sm bg-rose-500 text-white h-12 ${
+                isValidEmail ? '' : 'opacity-70 cursor-not-allowed'
+              }`}
               type="button"
               onClick={handleSignupModal}
+              disabled={!isValidEmail || email === ''}
             >
               계속
             </button>
           </div>
-
           <div className="inline-flex items-center justify-center w-full">
             <hr className="w-full h-px my-8 bg-gray-300 border-0" />
             <span className="absolute px-3 font-medium text-gray-900 bg-white ">
               또는
             </span>
-          </div>
+          </div>{' '}
+          <button
+            className="font-semibold w-full transition items-center justify-center rounded-md text-sm bg-yellow-500 text-amber-950 h-12 opacity-80"
+            type="button"
+            onClick={handleSignupModal}
+          >
+            카카오로 로그인 하기
+          </button>
           {signupModal && <SignupModal onClose={() => setsignupModal(false)} />}
         </div>
       </div>
     </div>
-  );
+  )
 }
