@@ -1,5 +1,6 @@
 // RoomsList.js
 'use client'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Star from '/public/home/star.svg'
 import ImageCarousel from '@/app/components/home/RoomCarousel'
@@ -27,7 +28,9 @@ const RoomsList = () => {
       <div className="text-xl mt-2 text-center">숙소 이미지 불러오는 중...</div>
     )
   }
-
+  function handleClick() {
+    console.log('Link clicked!')
+  }
   return (
     <div className="flex flex-wrap px-16 py-8">
       {data.map((room) => (
@@ -36,7 +39,9 @@ const RoomsList = () => {
           className="w-1/4 h-full p-[12px] mb-1 flex flex-col items-start"
         >
           <div className="w-full h-1/8 relative mb-2">
-            <ImageCarousel images={room.image} fill />
+            <Link href="/rooms" onClick={handleClick}>
+              <ImageCarousel images={room.image} fill />
+            </Link>
           </div>
           <div className="flex justify-between w-full">
             <div>
