@@ -44,7 +44,6 @@ export default function LocationModal({ anchorEl, setAnchorEl }) {
               width="100%"
               height="100%"
               layout="responsive"
-              borderRadius="30px"
             />
           </div>
           <Typography sx={{ paddingTop: '8px', fontSize: '18px' }}>
