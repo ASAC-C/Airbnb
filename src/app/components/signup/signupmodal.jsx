@@ -1,18 +1,18 @@
-"use client";
+'use client'
 
-import React, { useState } from "react";
-import Back from "/public/Back.svg";
-import MoreOne from "@/app/components/moreone";
+import React, { useState } from 'react'
+import Back from '/public/Back.svg'
+import MoreOne from '@/app/components/login/moreone'
 export default function SignUpModal({ onClose, email }) {
-  const [openMore, setopenMore] = useState(false);
+  const [openMore, setopenMore] = useState(false)
   const handleClose = (e) => {
-    if (e.target.id === "wrapper") onClose();
-    e.stopPropagation();
-  };
+    if (e.target.id === 'wrapper') onClose()
+    e.stopPropagation()
+  }
 
   const handleOpenMore = () => {
-    setopenMore(true);
-  };
+    setopenMore(true)
+  }
 
   return (
     <div
@@ -76,7 +76,7 @@ export default function SignUpModal({ onClose, email }) {
               placeholder="이메일"
               autoComplete="off"
               className="py-1 px-3 block w-full bg-transparent text-sm placeholder:text-gray-500 focus:outline-none focus:ring-0"
-              defaultValue={localStorage.getItem("Email")}
+              defaultValue={localStorage.getItem('Email')}
             />
           </div>
           <p className="text-left text-zinc-500 text-xs my-1 py-1 tracking-tight">
@@ -150,11 +150,11 @@ export default function SignUpModal({ onClose, email }) {
           </button>
           <hr />
           <p className="py-3 my-3 text-sm text-left">
-            동의 및 계속하기를 선택하여 에어비앤비{" "}
+            동의 및 계속하기를 선택하여 에어비앤비{' '}
             <span className="text-[#2875f0] underline font-semibold">
               서비스 약관
             </span>
-            ,{" "}
+            ,{' '}
             <span className="text-[#2875f0] underline font-semibold">
               결제 서비스 약관
             </span>
@@ -183,5 +183,5 @@ export default function SignUpModal({ onClose, email }) {
         {openMore && <MoreOne onClose={() => setopenMore(false)} />}
       </div>
     </div>
-  );
+  )
 }
