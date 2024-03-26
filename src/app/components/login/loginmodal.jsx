@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import X from '/public/XMark.svg'
-import SignupModal from '@/app/components/signupmodal'
+import SignupModal from '@/app/components/signup/signupmodal'
 
 export default function LoginModal({ openModal, onClose }) {
   const [signupModal, setsignupModal] = useState(false)

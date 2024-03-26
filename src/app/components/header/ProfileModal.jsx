@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import LoginModal from '@/app/components/loginmodal'
+import LoginModal from '@/app/components/login/loginmodal'
 export default function ProfileModal({ anchorEl, setAnchorEl }) {
   const isOpen = Boolean(anchorEl)
   const onClose = () => {
