@@ -39,7 +39,7 @@ export default function LocationModal({ anchorEl, setAnchorEl, onSelectLocation 
         지역으로 검색하기
       </Typography>
       <Grid container spacing={4} sx={{ padding: '20px' }}>
-        <Grid item xs={4} onClick={() => handleLocationSelect('')}>
+        <Grid item xs={4} onClick={() => handleLocationSelect('유연한 검색')}>
           <div className="hover:border-2 hover:border-gray-500">
             <Image
               src={world}
